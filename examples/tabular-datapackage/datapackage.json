@@ -1,0 +1,63 @@
+{
+    "profile": "tabular-data-package",
+    "spatial": "Random",
+    "title": "Openmod-Example",
+    "resources": [
+        {
+            "encoding": "utf-8",
+            "schema": {
+                "missingValues": [
+                    ""
+                ],
+                "fields": [
+                    {
+                        "name": "time",
+                        "format": "default",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Windpowerplant1",
+                        "format": "default",
+                        "type": "integer"
+                    }
+                ]
+            },
+            "profile": "tabular-data-resource",
+            "mediatype": "text/csv",
+            "path": "wind.csv",
+            "format": "csv",
+            "name": "wind"
+        },
+        {
+            "encoding": "utf-8",
+            "schema": {
+                "missingValues": [
+                    ""
+                ],
+                "fields": [
+                    {
+                        "name": "time",
+                        "format": "default",
+                        "type": "string"
+                    },
+                    {
+                        "name": "CH",
+                        "format": "default",
+                        "type": "number"
+                    },
+                    {
+                        "name": "LI",
+                        "format": "default",
+                        "type": "number"
+                    }
+                ]
+            },
+            "profile": "tabular-data-resource",
+            "mediatype": "text/csv",
+            "path": "demand.csv",
+            "format": "csv",
+            "name": "demand"
+        }
+    ],
+    "sources": "Created by hand"
+}
