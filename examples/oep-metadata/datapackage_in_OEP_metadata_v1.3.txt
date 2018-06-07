@@ -1,0 +1,35 @@
+'{  "title": "Openmod Example Scenario",
+    "description": "Do-A-Thon Data Package",
+    "language": [ "eng" ],
+    "spatial": 
+        {"location": "none",
+        "extent": "CH; LI",
+        "resolution": "country"},
+    "temporal": 
+        {"reference_date": "2010-01-01",
+        "start": "2010-01-01 01:00",
+        "end": "2010-01-01 02:00",
+        "resolution": "hour"},
+    "sources": [
+        {"name": "Board", "description": "A scratch on the board", "url": "none", "license": "none", "copyright": "none"} ],
+    "license": 
+        {"id": "ODbL-1.0",
+        "name": "Open Data Commons Open Database License 1.0",
+        "version": "1.0",
+        "url": "https://opendatacommons.org/licenses/odbl/1.0/",
+        "instruction": "You are free: To Share, To Create, To Adapt; As long as you: Attribute, Share-Alike, Keep open!",
+        "copyright": "© openmod"},
+    "contributors": [
+        {"name": "Ludee", "email": "", "date": "2016-06-16", "comment": "Create metadata"} ],
+    "resources": [
+        {"name": "demand.csv",
+        "format": "CSV",
+        "fields": [
+            {"name": "id", "description": "Unique identifier", "unit": ""},
+            {"name": "year", "description": "Reference year", "unit": ""},
+            {"name": "value", "description": "Example value", "unit": "MW"},
+            {"name": "geom", "description": "Geometry", "unit": ""} ] } ],
+    "metadata_version": "1.3"}';
+
+-- select description
+SELECT obj_description('model_draft.test_table' ::regclass) ::json;
